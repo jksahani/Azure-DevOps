@@ -42,3 +42,11 @@ Monitoring
 Azure DevOps dev.azure.com ------> Create a organization -----> 
 
 HCL / A/B/C
+
+TFS -- 
+
+Sprint --- 
+
+1week, 2week, 4 week 
+
+Daily --- Done, Doing, will do, Issue 
