@@ -1,20 +1,54 @@
 **Azure Pipeline**
 
 
+CICD --?
+
+CI - Continuous Integration --> Code -->Build-->package--->push to Artifacts/ContainerRegistry 
+CD - Continuous Deleivery/Deployment ---> Use the package and Automatikly deploy to the Servers/Clusters on varius environments(Dev,QA,UAT,Prod) 
+
+AzureDevOps --
+Pipeline (Build) ---
+Release Pipleine ---
+
 Pipeline - Set of tasks and automation. 
 
 CICD - Continuous integration and Continuous Delivery 
 
-Azure Pipeline ?
+1. Pipeline Setup Types -
 
-Trigger -- 
+Classic Pipeline (UI) ---Deprecate 
+Yaml Pipeline (Code)
+
+Terraform Repo-PR
+
+2. Trigger (on/off)
 
 
-Build?
+.net code --->PR ---->start the build Build  /
+Terraform code----->Trigger should be disabled--->Terraform deployment x
 
-Code --- manual through the CMD, 
+3. Build
 
-Integration (Build) - 
+4. Unit-Test
+
+5. Restore 
+
+6. SonarQube Scan 
+
+7. Push package to the Azure Artifacts
+
+CD ---
+
+Release Pipeline 
+
+1. Download the package 
+
+2. Create the Secret
+
+3. Deploy yaml file to the kubernetes
+
+4. Review and finish
+
 
 Deployment (Dev,Test,UAT,Prod)
 
